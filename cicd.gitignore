@@ -1,0 +1,85 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+venv/
+env/
+.Python
+build/
+dist/
+pip-wheel-metadata/
+*.egg-info/
+
+# --- Terraform ---
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+
+# --- Docker ---
+*.log
+Dockerfile
+docker-compose.override.yml
+# Ignore Docker image layer caches and containers
+**/.dockerignore
+**/Dockerfile
+**/docker-compose.yml
+
+# --- Ansible ---
+*.retry
+roles/*/.retry
+
+# --- Jenkins ---
+/.war
+/secrets/
+/logs/
+/workspace/
+/jobs/
+/lastStable/
+/lastSuccessful/
+/builds/
+.env
+.env.local
+.env.*
+.npmrc
+.yarnrc
+.cache/
+.history
+
+# --- Helm ---
+*.tgz
+charts/
+# Ignore Helm package files
+helm/release/*.tgz
+helm/release/*.lock
+
+# --- General ---
+# Node modules and package lock (if applicable)
+node_modules/
+package-lock.json
+yarn.lock
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+~*
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# --- Optional ---
+# If you're using any IDE, add the respective ignore files.
+# Example for VSCode:
+/.vscode/
+/.idea/
